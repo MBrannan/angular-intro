@@ -14,11 +14,11 @@ sigmanautApp.controller('SigmanautController', function(){
     }
   ];
 
-  self.newPerson = {};
+  self.newSigmanaut = {};
 
-  self.createPerson = function(){
-    console.log(self.newPerson);
-    self.people.push(angular.copy(self.newPerson));
-  };
+  self.createNewPerson = function(){
+    self.people.push(angular.copy(self.newSigmanaut));
+    console.log("sometimes she goes sometime she don't");
+  }
 
 });
